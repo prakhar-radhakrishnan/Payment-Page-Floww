@@ -14,3 +14,5 @@ This project is a responsive payment page designed for Floww APIs Private Limite
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/payment-page.git
+## Link to Google Drive (Project walkthrough video):
+https://drive.google.com/drive/folders/16O9BudQDHzzSW0Ff_GNQfSwY8CXQFJDx?usp=sharing
