@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Summary - Floww APIs Private Limited</title>
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+<header>
+  <div class="header-content">
+    <img src="assets/logo.png" alt="Floww APIs Logo" class="logo">
+    <h1 class="header-title">Payment Summary</h1>
+  </div>
+</header>
+
+
+
+  <main>
+    <!-- Payment Details Section (Shows all the money stuff) -->
+    <section class="payment-details">
+      <h2>Payment Details</h2>
+      <div class="details">
+        <p><strong>Product Name:</strong> <span id="product-name">API Subscription</span></p>
+        <p><strong>Quantity:</strong> <span id="quantity">1</span></p>
+        <p><strong>Price (per unit):</strong> ₹<span id="price">1000</span></p>
+        <p><strong>Subtotal:</strong> ₹<span id="subtotal">1000</span></p>
+        <p><strong>Tax (18% GST):</strong> ₹<span id="tax">180</span></p> <!-- Govt taking some money (18% tax) -->
+        <p><strong>Total Amount:</strong> ₹<span id="total">1180</span></p> 
+      </div>
+    </section>
+
+    <!-- Payment Action Section -->
+    <section class="payment-action">
+      <button id="pay-button">Pay Now</button> 
+      <p id="payment-message" class="hidden">Payment-in-progress. Please do not close this window.</p> <!-- Show this when payment is happening -->
+      <div id="loading-spinner" class="hidden"></div> <!-- Spinner-->
+      <p id="payment-status" class="hidden"></p> <!-- result displayed-->
+    </section>
+  </main>
+
+  <footer>
+    <p>For support, contact us at <a href="mailto:support@flowwapis.com">support@flowwapis.com</a> or call +91-1234567890.</p> 
+  </footer>
+
+  <!-- Javascript connection-->
+  <script src="script.js"></script>
+</body>
+</html>
